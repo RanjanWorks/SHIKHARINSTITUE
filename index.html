@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta
+    name="description"
+    content="Effortlessly blast WhatsApp messages directly from your CSV! This tool simplifies sending bulk messages on WhatsApp using a formatted CSV file. Save time and streamline communication with your contacts. Boost efficiency and reach a wider audience effortlessly."
+  />
+  <meta
+    name="keywords"
+    content="WhatsappMSG, message, whatsapp, sender"
+  />
+  <meta name="author" content="Ranjan" />
+  <meta name="theme-color" content="#00a884" />
+  <link rel="canonical" href="https://vebpath.github.io/whatsappmsgsendercsv/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./images/favicon-16x16.png"
+  />
+  <link rel="manifest" href="./images/site.webmanifest" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+    <title>WhatsappMSG</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <span class="header_wrapper">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="39"
+          height="39"
+          viewBox="0 0 39 39"
+        >
+          <path
+            fill="#00E676"
+            d="M10.7 32.8l.6.3c2.5 1.5 5.3 2.2 8.1 2.2 8.8 0 16-7.2 16-16 0-4.2-1.7-8.3-4.7-11.3s-7-4.7-11.3-4.7c-8.8 0-16 7.2-15.9 16.1 0 3 .9 5.9 2.4 8.4l.4.6-1.6 5.9 6-1.5z"
+          ></path>
+          <path
+            fill="#FFF"
+            d="M32.4 6.4C29 2.9 24.3 1 19.5 1 9.3 1 1.1 9.3 1.2 19.4c0 3.2.9 6.3 2.4 9.1L1 38l9.7-2.5c2.7 1.5 5.7 2.2 8.7 2.2 10.1 0 18.3-8.3 18.3-18.4 0-4.9-1.9-9.5-5.3-12.9zM19.5 34.6c-2.7 0-5.4-.7-7.7-2.1l-.6-.3-5.8 1.5L6.9 28l-.4-.6c-4.4-7.1-2.3-16.5 4.9-20.9s16.5-2.3 20.9 4.9 2.3 16.5-4.9 20.9c-2.3 1.5-5.1 2.3-7.9 2.3zm8.8-11.1l-1.1-.5s-1.6-.7-2.6-1.2c-.1 0-.2-.1-.3-.1-.3 0-.5.1-.7.2 0 0-.1.1-1.5 1.7-.1.2-.3.3-.5.3h-.1c-.1 0-.3-.1-.4-.2l-.5-.2c-1.1-.5-2.1-1.1-2.9-1.9-.2-.2-.5-.4-.7-.6-.7-.7-1.4-1.5-1.9-2.4l-.1-.2c-.1-.1-.1-.2-.2-.4 0-.2 0-.4.1-.5 0 0 .4-.5.7-.8.2-.2.3-.5.5-.7.2-.3.3-.7.2-1-.1-.5-1.3-3.2-1.6-3.8-.2-.3-.4-.4-.7-.5h-1.1c-.2 0-.4.1-.6.1l-.1.1c-.2.1-.4.3-.6.4-.2.2-.3.4-.5.6-.7.9-1.1 2-1.1 3.1 0 .8.2 1.6.5 2.3l.1.3c.9 1.9 2.1 3.6 3.7 5.1l.4.4c.3.3.6.5.8.8 2.1 1.8 4.5 3.1 7.2 3.8.3.1.7.1 1 .2h1c.5 0 1.1-.2 1.5-.4.3-.2.5-.2.7-.4l.2-.2c.2-.2.4-.3.6-.5s.4-.4.5-.6c.2-.4.3-.9.4-1.4v-.7s-.1-.1-.3-.2z"
+          ></path>
+        </svg>
+        <p>Whatsapp Message</p>
+      </span>
+      <main class="hero">
+        <div class="descripton">
+          <p class="desp">
+            Send WhatsApp messages to unsaved numbers effortlessly. Import
+            contacts from CSV files for efficient communication. Streamline your
+            messaging strategy today
+          </p>
+        </div>
+        <form class="choise">
+         
+          <input name="Whatsapp1" id="text" type="radio" checked />
+          <label for="text">
+            <i class='bx bx-message-square-dots'></i>
+            Text</label>
+            <input name="Whatsapp1" id="api" type="radio"  />
+            <label for="api">
+              <i class='bx bxl-whatsapp' ></i>
+              Whatsapp</label>
+        </form>
+        <div class="grid_box">
+          <section>
+            <div class="input_wrapper">
+              <i class="bx bx-phone input_icon"></i>
+              <input
+                class="input_text"
+                type="number"
+                placeholder="Phone Number"
+                id="phoneInput"
+                autocomplete="off"
+                
+              />
+            </div>
+            <div class="input_wrapper">
+              <i class="bx bx-comment-dots input_icon"></i>
+            <textarea class="input_text" id="messageInput"></textarea>
+            </div>
+            <div class="input_wrapper">
+              <i class='bx bx-time-five input_icon'></i>
+              <input class="input_text" type="number" value="4000" placeholder="Delay in ms" id="delay"/>
+            </div>
+
+            <button id="sendBtn">
+ Send            
+            </button>
+          </section>
+          <div class="divider">
+            <span></span>
+            OR
+            <span></span>
+          </div>
+          <section>
+            <form class="upload_box">
+              <i id="uploadIcon" class="bx bx-cloud-upload"></i>
+              <p>Drop Files here</p>
+              <p>Or</p>
+              <label for="inputFile">Browse</label>
+              <input id="inputFile" type="file" accept=".csv" />
+            </form>
+          </section>
+        </div>
+        <div class="message">
+          <div>
+
+          <i id="loader" class='bx bx-loader-alt'></i>
+          <i id="check" class='bx bxs-check-circle'></i>
+          <p><span id="total">0</span> out of <span id="sent">0</span> message sent (<span id="percentage">0%</span>)</p>
+        </div>
+   <span onclick="cancelSend()">Cancel</span>
+        
+        </div>
+      
+      </main>
+     
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+{
+    "name": "Whatsapp",
+    "short_name": "Sender",
+    "description": "Effortlessly blast WhatsApp messages directly from your CSV! This tool simplifies sending bulk messages on WhatsApp using a formatted CSV file. Save time and streamline communication with your contacts. Boost efficiency and reach a wider audience effortlessly.",
+    "icons": [
+      {
+        "src": "android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/whatsappmsgsendercsv/",
+    "background_color": "#000000",
+    "theme_color_dark": "#00a884",
+    "theme_color_light": "#000000",
+    "theme_color": "#00a884",
+    "display": "standalone",
+    "orientation": "any",
+    "scope": "/whatsappmsgsendercsv/",
+    "lang": "en",
+    "dir": "ltr",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "categories": ["utilities"],
+    "shortcuts": [],
+    "permissions": [],
+    "web_app_manifest": {
+      "name": "",
+      "short_name": "Sender",
+      "start_url": "/index.html",
+      "display": "standalone",
+      "icons": [
+        {
+          "src": "android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+    }
+  }
+  
