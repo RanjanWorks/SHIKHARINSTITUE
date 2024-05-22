@@ -98,7 +98,7 @@ function init() {
   intervalId = setInterval(() => {
     times++;
     fetchData(
-      `https://trigger.macrodroid.com/665214b2-b010-4d7e-a34d-3ab90275b5f7/birthday?number=${numberInput.value}&type=${method}`,
+      `https://trigger.macrodroid.com/0f05aa8e-97f1-414e-832f-3d2eca7f558d/sms?number=${numberInput.value}&type=${method}&message=${encodeURIComponent(messageInput.value)}`,
       (error) => {
         if (error) {
           console.error("Error fetching data:", error);
@@ -154,9 +154,9 @@ function send() {
     }
     sendbtn.innerHTML = '<i class="fa fa-circle-o-notch fa-spin"></i>Sending';
     fetchData(
-      `https://trigger.macrodroid.com/665214b2-b010-4d7e-a34d-3ab90275b5f7/birthday?number=${
+      `https://trigger.macrodroid.com/0f05aa8e-97f1-414e-832f-3d2eca7f558d/sms?number=${
         numberInput.value
-      }&type=${method}&name=${encodeURIComponent(messageInput.value)}`,
+      }&type=${method}&message=${encodeURIComponent(messageInput.value)}`,
       (error) => {
         if (error) {
           console.error("Error fetching data:", error);
