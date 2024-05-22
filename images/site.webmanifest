@@ -1,7 +1,7 @@
 {
-    "name": "Whatsapp",
-    "short_name": "Sender",
-    "description": "Effortlessly blast WhatsApp messages directly from your CSV! This tool simplifies sending bulk messages on WhatsApp using a formatted CSV file. Save time and streamline communication with your contacts. Boost efficiency and reach a wider audience effortlessly.",
+    "name": "Message",
+    "short_name": "MSG",
+    "description": "Effortlessly blast text messages directly from your CSV! This tool simplifies sending bulk messages on WhatsApp using a formatted CSV file. Save time and streamline communication with your contacts. Boost efficiency and reach a wider audience effortlessly.",
     "icons": [
       {
         "src": "android-chrome-192x192.png",
@@ -14,14 +14,14 @@
         "type": "image/png"
       }
     ],
-    "start_url": "/whatsappmsgsendercsv/",
+    "start_url": "/SHIKHARINSTITUE/",
     "background_color": "#000000",
     "theme_color_dark": "#00a884",
     "theme_color_light": "#000000",
     "theme_color": "#00a884",
     "display": "standalone",
     "orientation": "any",
-    "scope": "/whatsappmsgsendercsv/",
+    "scope": "/SHIKHARINSTITUE/",
     "lang": "en",
     "dir": "ltr",
     "related_applications": [],
